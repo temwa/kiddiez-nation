@@ -12,7 +12,8 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
-    <link href="~/favicon3.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/favicon4.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/content/custom.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -46,7 +47,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">KiddiezNation</a>
+                    <a class="" runat="server" href="~/">
+                        <asp:Image ID="Image2" runat="server"
+                            ImageUrl="~/Images/logo2.png" BorderStyle="None" />
+                    </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -77,32 +81,45 @@
             </div>
         </div>
         <div id="TitleContent" style="text-align: center">
-            <a runat="server" href="~/">
-                <asp:Image ID="Image1" runat="server"
-                    ImageUrl="~/Images/logo.png" BorderStyle="None" />
-            </a>
             <br />
         </div>
+        <div id="mynav-container">
 
-        <div id="CategoryMenu" style="text-align: center">
-            <asp:ListView ID="categoryList"
-                ItemType="Nation1.Models.Category" runat="server" SelectMethod="GetCategories">
-                <ItemTemplate>
-                    <b style="font-size: large; font-style: normal">
-                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">  
-                            <%#: Item.Description %> 
-                        </a>
-                    </b>
-                </ItemTemplate>
-                <ItemSeparatorTemplate>| </ItemSeparatorTemplate>
-            </asp:ListView>
+            <nav id="mynav" class="navbar navbar-default">
+                <div class="">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href=""><b>Shop</b></a>
+                    </div>
+                    <asp:ListView ID="ListView2"
+                        ItemType="Nation1.Models.Category" runat="server" SelectMethod="GetCategories">
+                        <LayoutTemplate>
+                            <ul class="nav navbar-nav">
+                                <asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+                            </ul>
+                        </LayoutTemplate>
+                        <ItemTemplate>
+                            <li>
+                                <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
+                                    <%#: Item.Description %> 
+                                </a>
+                            </li>
+                        </ItemTemplate>
+                    </asp:ListView>
+                </div>
+            </nav>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - KiddiezNation</p>
+                <p>&copy; <%: DateTime.Now.Year %> - KiddiezNation. All Rights Reserved.</p>
             </footer>
         </div>
     </form>

@@ -13,6 +13,15 @@ namespace Nation1 {
     public partial class SiteMaster {
         
         /// <summary>
+        /// Image2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image2;
+        
+        /// <summary>
         /// adminLink control.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,13 @@ namespace Nation1 {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
         
         /// <summary>
-        /// Image1 control.
+        /// ListView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// categoryList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView categoryList;
+        protected global::System.Web.UI.WebControls.ListView ListView2;
         
         /// <summary>
         /// MainContent control.
