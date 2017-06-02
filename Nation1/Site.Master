@@ -90,7 +90,7 @@
                 <ItemTemplate>
                     <b style="font-size: large; font-style: normal">
                         <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">  
-                            <%#: Item.CategoryName %> 
+                            <%#: Item.Description %> 
                         </a>
                     </b>
                 </ItemTemplate>
