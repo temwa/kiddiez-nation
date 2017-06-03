@@ -48,10 +48,10 @@ Convert.ToDouble(Item.Product.UnitPrice)))%>
         </strong>
     </div>
     <br />
-    <table>
+    <table style="width: 300px;">
         <tr>
             <td>
-                <asp:Button ID="UpdateBtn" runat="server" CssClass="btn btn-primary checkout-btn" Text="Update"
+                <asp:Button ID="UpdateBtn" runat="server" CssClass="btn btn-primary update-btn" Text="Update"
                     OnClick="UpdateBtn_Click" />
             </td>
             <td>
