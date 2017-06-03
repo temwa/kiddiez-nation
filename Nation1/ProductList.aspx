@@ -24,28 +24,27 @@
                 </GroupTemplate>
                 <ItemTemplate>
                     <td runat="server">
-                        <table>
+                        <table class="product-list-item">
                             <tr>
                                 <td>
                                     <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productLinkName = Item.ProductLinkName}) %>">
-                                        <image src='/Catalog/Images/Thumbs/<%#:Item.ImagePath%>' 
-                                            width="100" height="75" border="1" /></a>
+                                        <image src='/Catalog/Images/Thumbs/<%#:Item.ImagePath%>'
+                                            width="100" height="75" border="1" />
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productLinkName = Item.ProductLinkName}) %>"> 
-                                            <%#:Item.ProductName%> 
+                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productLinkName = Item.ProductLinkName}) %>">
+                                        <%#:Item.ProductName%> 
                                     </a>
                                     <br />
                                     <span>
                                         <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
-                                    <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">
-                                        <span class="ProductListItem">
-                                            <b>Add To Cart<b> 
-                                        </span>
+                                    <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>" class="btn btn-primary">
+                                        <b>Add To Cart<b> 
                                     </a>
                                 </td>
                             </tr>
