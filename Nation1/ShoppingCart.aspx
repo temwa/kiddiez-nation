@@ -11,7 +11,7 @@ Cart</h1>
         ShowFooter="True" GridLines="Vertical" CellPadding="4"
         ItemType="Nation1.Models.CartItem"
         SelectMethod="GetShoppingCartItems"
-        CssClass="table table-striped table-bordered">
+        CssClass="table table-striped table-bordered" OnSelectedIndexChanged="CartList_SelectedIndexChanged">
         <Columns>
             <asp:BoundField DataField="ProductID" HeaderText="ID"
                 SortExpression="ProductID" />
@@ -34,6 +34,16 @@ Convert.ToDouble(Item.Product.UnitPrice)))%>
             <asp:TemplateField HeaderText="Remove Item">
                 <ItemTemplate>
                     <asp:CheckBox ID="Remove" runat="server"></asp:CheckBox>
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Repeat Order">
+                <ItemTemplate>
+                    <asp:DropDownList ID="RepeatOrder" runat="server" AutoPostBack="True" EnableViewState="true">
+                        <asp:ListItem Value="0" Text="No Repeat" Selected="True"></asp:ListItem>
+                        <asp:ListItem Value="1" Text="Weekly"></asp:ListItem>
+                        <asp:ListItem Value="2" Text="Bi-Weekly"></asp:ListItem>
+                        <asp:ListItem Value="3" Text="Monthly"></asp:ListItem>
+                    </asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

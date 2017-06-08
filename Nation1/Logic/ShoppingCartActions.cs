@@ -226,6 +226,7 @@ c).FirstOrDefault();
             public int ProductId;
             public int PurchaseQuantity;
             public bool RemoveItem;
+            public string RepeatOrder;
         }
 
         public void MigrateCart(string cartId, string userName)

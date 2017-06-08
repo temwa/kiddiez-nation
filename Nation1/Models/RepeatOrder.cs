@@ -2,10 +2,11 @@
 
 namespace Nation1.Models
 {
-    public class OrderDetail
+    public class RepeatOrder
     {
-        public int OrderDetailId { get; set; }
+        public int RepeatOrderId { get; set; }
 
+        public string RepeatPeriod { get; set; }
         public int OrderId { get; set; }
 
         public string Username { get; set; }
@@ -16,6 +17,5 @@ namespace Nation1.Models
 
         public double? UnitPrice { get; set; }
 
-        public string RepeatPeriod { get; set; }
     }
 }

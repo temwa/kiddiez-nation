@@ -74,6 +74,7 @@ namespace Nation1.Checkout
                             myOrderDetail.ProductId = myOrderList[i].ProductId;
                             myOrderDetail.Quantity = myOrderList[i].Quantity;
                             myOrderDetail.UnitPrice = myOrderList[i].Product.UnitPrice;
+                            myOrderDetail.RepeatPeriod = myOrderList[i].RepeatPeriod;
                             // Add OrderDetail to DB.
                             _db.OrderDetails.Add(myOrderDetail);
                             _db.SaveChanges();

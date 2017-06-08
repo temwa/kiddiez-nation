@@ -18,5 +18,7 @@ namespace Nation1.Models
 
         public virtual Product Product { get; set; }
 
+        public string RepeatPeriod { get; set; }
+
     }
 }

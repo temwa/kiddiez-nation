@@ -15,6 +15,7 @@
             <asp:BoundField DataField="Product.UnitPrice" HeaderText="Price(each)"
                 DataFormatString="{0:c}" />
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" />
+            <asp:BoundField DataField="RepeatPeriod" HeaderText="Repeat Order" />
         </Columns>
     </asp:GridView>
     <asp:DetailsView ID="ShipInfo" runat="server" AutoGenerateRows="False"
@@ -43,6 +44,6 @@
     </asp:DetailsView>
     <p></p>
     <hr />
-    <asp:Button ID="CheckoutConfirm" runat="server" Text="Complete Order"
+    <asp:Button ID="CheckoutConfirm" runat="server" CssClass="btn btn-primary" Text="Complete Order"
         OnClick="CheckoutConfirm_Click" />
 </asp:Content>

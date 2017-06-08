@@ -73,6 +73,40 @@ namespace Nation1
             }
         }
 
+        public List<CartItem> UpdateRepeats()
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                String cartId = usersShoppingCart.GetCartId();
+
+                ShoppingCartActions.ShoppingCartUpdates[] cartUpdates = new
+               ShoppingCartActions.ShoppingCartUpdates[CartList.Rows.Count];
+                for (int i = 0; i < CartList.Rows.Count; i++)
+                {
+                    IOrderedDictionary rowValues = new OrderedDictionary();
+                    rowValues = GetValues(CartList.Rows[i]);
+                    cartUpdates[i].ProductId = Convert.ToInt32(rowValues["ProductID"]);
+
+                    //CheckBox cbRemove = new CheckBox();
+                    //cbRemove = (CheckBox)CartList.Rows[i].FindControl("Remove");
+                    //cartUpdates[i].RemoveItem = cbRemove.Checked;
+
+                    // DropDownList selectedRepeat = new DropDownList();
+                    // selectedRepeat =
+                    //(DropDownList)CartList.Rows[i].FindControl("Repeat");
+                    // cartUpdates[i].RepeatOrder = selectedRepeat.SelectedValue; /* HERE */
+
+                    //DropDownList selectedRepeat = new DropDownList();
+                    DropDownList selectedRepeat = (DropDownList)CartList.Rows[i].FindControl("RepeatOrder");
+                    cartUpdates[i].RepeatOrder = selectedRepeat.SelectedValue; /* HERE */
+                }
+                usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
+                CartList.DataBind();
+                //lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                return usersShoppingCart.GetCartItems();
+            }
+        }
+
         public static IOrderedDictionary GetValues(GridViewRow row)
         {
             IOrderedDictionary values = new OrderedDictionary();
@@ -100,6 +134,13 @@ namespace Nation1
                 Session["payment_amt"] = usersShoppingCart.GetTotal();
             }
             Response.Redirect("Checkout/CheckoutStart.aspx");
+        }
+
+        protected void CartList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            UpdateRepeats();
+
         }
     }
 }
