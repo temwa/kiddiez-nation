@@ -6,7 +6,8 @@
                 <h1><%#:Item.NannyName %></h1>
             </div>
             <br />
-            <table>
+            <asp:Panel runat="server" BackColor="PowderBlue" BorderStyle="Solid" ID="Main">
+                <table>
                 <tr>
                     <td>
                         <img src="/Catalog/Images/<%#:Item.ImagePath %>" style="border: solid; height: 300px" alt="<%#:Item.NannyName %>" />
@@ -29,6 +30,7 @@
                     </td>
                 </tr>
             </table>
+            </asp:Panel>
         </ItemTemplate>
     </asp:FormView>
 </asp:Content>
