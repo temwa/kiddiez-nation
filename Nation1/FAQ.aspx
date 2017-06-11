@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Frequently Asked Questions (FAQs)" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" Inherits="Nation1.FAQ" %>
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<%@ Page Title="Frequently Asked Questions (FAQs)" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" Inherits="Nation1.FAQ" %>
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%:Title %>:</h2>
     <br />    
     <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">    
