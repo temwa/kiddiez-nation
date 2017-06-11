@@ -1,12 +1,21 @@
 ﻿body {
 }
 
+.navbar  {
+    position: relative;
+    top: -50px;
+
+}
 /* Category Nav */
 #mynav-container {
     width: 50%;
     margin: 0 auto;
+    bottom: -50px;
 }
 
+#mynav {
+    margin-bottom: 0 !important;
+}
 #mynav ul {
     display: inline-block;
     list-style-type: none;
