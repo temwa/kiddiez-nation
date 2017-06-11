@@ -27,7 +27,9 @@
                         <table>
                             <tr>
                                 <td>
-                                    <a href="NannyList.aspx?nannyID=<%#:Item.NannyID %>"></a>
+                                    <a href="NannyList.aspx?nannyID=<%#:Item.NannyID %>">
+                                    <img src="/Catalog/Images/<%#:Item.ImagePath %>" width="100" height="75" style="border:solid" />
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
