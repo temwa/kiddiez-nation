@@ -1,9 +1,9 @@
 <%@ Page Title="Frequently Asked Questions (FAQs)" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" Inherits="Nation1.FAQ" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%:Title %>.</h2>
-    <br />
-    <h3>Getting Started</h3>
+    <br />    
     <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
+        <h3>Getting Started</h3>
         <h4>What is Kiddiez Nation?</h4>
         <p>Kiddiez Nation allows you to shop on our website, and have your order delivered to your home or business at your convenience.</p>
         <h4>How do I register?</h4>
