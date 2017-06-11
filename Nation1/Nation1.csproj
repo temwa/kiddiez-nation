@@ -201,6 +201,12 @@
     <Content Include="Catalog\Images\form6.jpg" />
     <Content Include="Catalog\Images\form7.jpg" />
     <Content Include="Catalog\Images\form8.jpg" />
+    <Content Include="Catalog\Images\nanny1.jpg" />
+    <Content Include="Catalog\Images\nanny2.jpg" />
+    <Content Include="Catalog\Images\nanny3.jpg" />
+    <Content Include="Catalog\Images\nanny4.jpg" />
+    <Content Include="Catalog\Images\nanny5.jpg" />
+    <Content Include="Catalog\Images\nanny6.jpg" />
     <Content Include="Catalog\Images\nap1.jpg" />
     <Content Include="Catalog\Images\nap2.jpg" />
     <Content Include="Catalog\Images\nap3.jpg" />
@@ -297,6 +303,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="FAQ.aspx" />
     <Content Include="favicon2.ico" />
     <Content Include="favicon3.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -549,6 +556,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

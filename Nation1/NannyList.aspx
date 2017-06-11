@@ -5,8 +5,8 @@
             <hgroup>
                 <h2><%:Page.Title %></h2>
             </hgroup>
-
-            <asp:ListView ID="nannyList" runat="server" DataKeyNames="NannyID" GroupItemCount="2" ItemType="Nation1.Models.Nanny" SelectMethod="GetNannies">
+            <asp:Panel runat="server" BackColor="Lavender" ID="Main" Visible="true">
+                <asp:ListView ID="nannyList" runat="server" DataKeyNames="NannyID" GroupItemCount="2" ItemType="Nation1.Models.Nanny" SelectMethod="GetNannies">
                 <EmptyDataTemplate>
                     <table >
                         <tr>
@@ -27,7 +27,9 @@
                         <table>
                             <tr>
                                 <td>
-                                    <a href="NannyList.aspx?nannyID=<%#:Item.NannyID %>"></a>
+                                    <a href="NannyList.aspx?nannyID=<%#:Item.NannyID %>">
+                                    <img src="/Catalog/Images/<%#:Item.ImagePath %>" width="100" height="75" style="border:solid" />
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -48,7 +50,6 @@
                                 <td>&nbsp;</td>
                             </tr>
                         </table>
-                        </p>
                     </td>
                 </ItemTemplate>
                 <LayoutTemplate>
@@ -69,6 +70,7 @@
                     </table>
                 </LayoutTemplate>
             </asp:ListView>
+            </asp:Panel>
         </div>
     </section>
 </asp:Content>

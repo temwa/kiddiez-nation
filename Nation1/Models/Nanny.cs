@@ -30,5 +30,7 @@ namespace Nation1.Models
 
         [StringLength(1000), Display(Name ="Extra Information")]
         public string Extra { get; set; }
+
+        public string ImagePath { get; set; }
     }
 }
