@@ -38,7 +38,9 @@ namespace Nation1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
-        
+
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor wishCount;
+
         /// <summary>
         /// ListView2 control.
         /// </summary>
