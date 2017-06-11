@@ -15,7 +15,7 @@
     </asp:Panel>
 
     <br />
-    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Placing" Visible="true">
     <h3>Placing an order</h3>
     <h4>How do I log in?</h4>
     <p>There is a 'Log in' button at the top right hand side of the home page. Click on the button and enter the username and password you created during the registration process.</p>
@@ -39,7 +39,7 @@
     <p>To add items to your wishlist, you click on 'Add to Wishlist' next to the product you want to add to your wishlist and the wishlist is automatically updated.</p>
     </asp:Panel>
     <br />
-    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Booking" Visible="true">
     <h3>Booking the delivery</h3>    
     <h4>If you don't deliver to my area, is it possible that you might in the future?</h4>
     <p>We are always growing our delivery network and will be interested in delivering to you if at all possible. You are invited to suggest your area, whether you are a registered Online Shopper or not.</p>
@@ -55,7 +55,7 @@
     <p>We generally deliver Monday to Saturday from 12:00 to 00:00, but individual areas may be subject to different delivery times. The times available are clearly displayed during the slot booking process.</p>
     </asp:Panel>
     <br />
-    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Payment" Visible="true">
     <h3>Making a Payment</h3>
     <h4>How do I checkout?</h4>
     <p>Once you are satisfied with your cart and are ready to checkout, you press checkout and then follow the directions on the page even if you are redirected to your bank's website.</p>
