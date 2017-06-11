@@ -46,6 +46,9 @@
                                     <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>" class="btn btn-primary">
                                         <b>Add To Cart<b> 
                                     </a>
+                                    <a href="/AddToWish.aspx?productID=<%#:Item.ProductID %>" class="btn btn-primary">
+                                        <b>Add To Wishlist</b>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>

@@ -84,6 +84,12 @@ namespace Nation1
                 string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
                 cartCount.InnerText = cartStr;
             }
+
+            using (WishlistCartActions usersWishlistCart= new WishlistCartActions())
+            {
+                string wishStr = string.Format("WishList ({0})", usersWishlistCart.GetCount());
+                wishCount.InnerText = wishStr;
+            }
         }
 
         public IQueryable<Category> GetCategories()

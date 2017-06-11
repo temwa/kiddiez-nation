@@ -57,9 +57,11 @@
                         <li><a runat="server" id="adminLink" visible="false" href="~/Admin/AdminPage">Admin</a></li>
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/NannyList">Nannies</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a runat="server" href="~/ProductList">Products</a></li>
                         <li><a runat="server" href="~/ShoppingCart" id="cartCount">&nbsp;</a></li>
+                        <li><a runat="server" href="~/WishlistCart" id="wishCount">&nbsp;</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
