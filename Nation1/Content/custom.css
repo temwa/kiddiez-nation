@@ -6,16 +6,19 @@
     width: 50%;
     margin: 0 auto;
 }
+
 #mynav ul {
     display: inline-block;
     list-style-type: none;
 }
 
-.nav>li>a:after {
-  content: '';
-  border-bottom: 1px solid red;
-  position: absolute;
-  bottom: 0; left: 15px; right: 15px;
+.nav > li > a:after {
+    content: '';
+    border-bottom: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
 }
 
 /* Products */
@@ -26,4 +29,30 @@
 /* Cart */
 .update-btn {
     padding-right: 20px;
+}
+
+/* Learn More */
+#learn-more {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#learn-more p{
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+
+.learn-more-btn {
+    width: 100% !important;
+    height: 85px;
+}
+
+/* Footer */
+#footer p, #footer img {
+    padding-right: 20px;
+}
+
+#footer img {
+    height: 40px;
+    width: auto;
 }

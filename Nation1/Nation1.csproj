@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
@@ -201,6 +201,12 @@
     <Content Include="Catalog\Images\form6.jpg" />
     <Content Include="Catalog\Images\form7.jpg" />
     <Content Include="Catalog\Images\form8.jpg" />
+    <Content Include="Catalog\Images\nanny1.jpg" />
+    <Content Include="Catalog\Images\nanny2.jpg" />
+    <Content Include="Catalog\Images\nanny3.jpg" />
+    <Content Include="Catalog\Images\nanny4.jpg" />
+    <Content Include="Catalog\Images\nanny5.jpg" />
+    <Content Include="Catalog\Images\nanny6.jpg" />
     <Content Include="Catalog\Images\nap1.jpg" />
     <Content Include="Catalog\Images\nap2.jpg" />
     <Content Include="Catalog\Images\nap3.jpg" />

@@ -11,7 +11,6 @@ namespace Nation1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         private void Page_Error(object sender, EventArgs e)
