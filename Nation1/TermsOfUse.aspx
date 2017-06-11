@@ -47,7 +47,9 @@
         We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms 
     taking effect. What constitutes a material change will be determined at our sole discretion.
     </p>
-
+    <h4>Refunds and Returns</h4>
+    <p>We want you to be happy with your purchase. If you are not completely satisfied, you can return the product to us and we will either repair / replace it or credit your account, 
+        subject to you retaining the purchase receipt and in possession of the original packaging.</p>
     <h4>Contact Us</h4>
     <p>
         If you have any questions about these Terms, please <a href="Contact">contact us</a>.
