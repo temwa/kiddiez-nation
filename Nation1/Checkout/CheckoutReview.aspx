@@ -15,7 +15,7 @@
             <asp:BoundField DataField="Product.UnitPrice" HeaderText="Price(each)"
                 DataFormatString="{0:c}" />
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" />
-            <asp:BoundField DataField="RepeatPeriod" HeaderText="Repeat Order" />
+            <%--<asp:BoundField DataField="RepeatPeriod" HeaderText="Repeat Order" />--%>
         </Columns>
     </asp:GridView>
     <asp:DetailsView ID="ShipInfo" runat="server" AutoGenerateRows="False"
