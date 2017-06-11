@@ -66,3 +66,8 @@ Exception Type: System.Web.HttpException
 Exception: An HTTP error occurred. Page Not found. Please try again.
 Source: customErrors section - Web.config
 Stack Trace: 
+********** 2017/06/11 08:55:24 PM **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
