@@ -1,21 +1,21 @@
-﻿<%@ Page Title="Frequently Asked Questions (FAQs)" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" Inherits="Nation1.FAQ" %>
+<%@ Page Title="Frequently Asked Questions (FAQs)" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" Inherits="Nation1.FAQ" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%:Title %>.</h2>
     <br />
     <h3>Getting Started</h3>
-    <asp:Panel runat="server" BackColor="Lavender" ID="Started" Visible="true">
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
         <h4>What is Kiddiez Nation?</h4>
         <p>Kiddiez Nation allows you to shop on our website, and have your order delivered to your home or business at your convenience.</p>
+        <h4>How do I register?</h4>
+        <p>Just click on the 'Register' button in the top right corner of your screen and follow the instructions. We'll ask you for a few personal and contact details, including your billing address. You'll also be asked to create a username and password. After registration you'll automatically be logged in to the site and you'll be all set to start shopping!</p>
+        <h4>Do I have to register?</h4>
+        <p>You don't have to register to simply be able to browse our website, but to be able to benefit from all the features we recommend that you do. It's a quick and easy process with no strings attached.</p>
+        <h4>Who do I contact for help with registering, placing and order or checking out?</h4>
+        <p>If you need further assistance, contact our friendly Call Centre on +2778 091 7232 during the following hours: Monday to Friday from 08:00 to 21:00, Saturday from 08:00 to 21:00, Sunday and public holidays from 09:00 to 17:00.</p>
     </asp:Panel>
-        
-    <h4>How do I register?</h4>
-    <p>Just click on the 'Register' button in the top right corner of your screen and follow the instructions. We'll ask you for a few personal and contact details, including your billing address. You'll also be asked to create a username and password. After registration you'll automatically be logged in to the site and you'll be all set to start shopping!</p>
-    <h4>Do I have to register?</h4>
-    <p>You don't have to register to simply be able to browse our website, but to be able to benefit from all the features we recommend that you do. It's a quick and easy process with no strings attached.</p>
-    <h4>Who do I contact for help with registering, placing and order or checking out?</h4>
-    <p>If you need further assistance, contact our friendly Call Centre on +2778 091 7232 during the following hours: Monday to Friday from 08:00 to 21:00, Saturday from 08:00 to 21:00, Sunday and public holidays from 09:00 to 17:00.</p>
 
     <br />
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
     <h3>Placing an order</h3>
     <h4>How do I log in?</h4>
     <p>There is a 'Log in' button at the top right hand side of the home page. Click on the button and enter the username and password you created during the registration process.</p>
@@ -37,8 +37,9 @@
     <p>To view your wishlist, you click on the Wish List tab on the top of the page and you will be redirected to the 'Wishlist' page.</p>
     <h4>How do I change my wishlist?</h4>
     <p>To add items to your wishlist, you click on 'Add to Wishlist' next to the product you want to add to your wishlist and the wishlist is automatically updated.</p>
-    
+    </asp:Panel>
     <br />
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
     <h3>Booking the delivery</h3>    
     <h4>If you don't deliver to my area, is it possible that you might in the future?</h4>
     <p>We are always growing our delivery network and will be interested in delivering to you if at all possible. You are invited to suggest your area, whether you are a registered Online Shopper or not.</p>
@@ -52,8 +53,9 @@
     <p>There is a lot of work involved in getting your order delivered to you. The time it takes, the technology involved, your Personal Shopper and the team we use to make it all possible means we have to charge a reasonable fee for this convenient service. We always strive to keep our costs as low as possible so we can give you the best value. We have also varied our delivery charges to ensure there are different pricing options for you, and also to help us offer a better and consistent service.</p>
     <h4>What hours are deliveries made?</h4>
     <p>We generally deliver Monday to Saturday from 12:00 to 00:00, but individual areas may be subject to different delivery times. The times available are clearly displayed during the slot booking process.</p>
-    
+    </asp:Panel>
     <br />
+    <asp:Panel runat="server" BackColor="LavenderBlush" ID="Started" Visible="true">
     <h3>Making a Payment</h3>
     <h4>How do I checkout?</h4>
     <p>Once you are satisfied with your cart and are ready to checkout, you press checkout and then follow the directions on the page even if you are redirected to your bank's website.</p>
@@ -69,4 +71,5 @@
     <p>Once you have submitted your order a confirmation page will be displayed, which you can then print for your reference. In addition you will receive an email confirmation of your order. Both confirmations show a guide price only as we take payment on the day we process your order (either the day of, or the day before, your delivery). Your delivery will also be accompanied by a tax invoice - one for you to keep, and the other for you to sign and be returned to us.</p>
     <h4>Are prices in the store the same as online?</h4>
     <p>Online shopping prices are generally the same as in-store prices. Exceptions may occur with specific in-store only promotions that will not be available online. Note that the online prices will be the same as the fulfilment store from where the order is picked.</p>
+    </asp:Panel>
 </asp:Content>
