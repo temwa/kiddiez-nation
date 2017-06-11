@@ -3,11 +3,11 @@
     <asp:FormView ID="nannyDetail" runat="server" ItemType="Nation1.Models.Nanny" SelectMethod="GetNanny" RenderOuterTable="false">
         <ItemTemplate>
             <div>
-                <h1><%#:Item.NannyName %></h1>
+                <h2>Nanny Details</h2>
+                <h4><%#:Item.NannyName %></h4>
             </div>
             <br />
-            <asp:Panel runat="server" BackColor="PowderBlue" BorderStyle="Solid" ID="Main">
-                <table>
+            <table>
                 <tr>
                     <td>
                         <img src="/Catalog/Images/<%#:Item.ImagePath %>" style="border: solid; height: 300px" alt="<%#:Item.NannyName %>" />
@@ -30,7 +30,6 @@
                     </td>
                 </tr>
             </table>
-            </asp:Panel>
         </ItemTemplate>
     </asp:FormView>
 </asp:Content>
