@@ -5,7 +5,7 @@
             <hgroup>
                 <h2><%:Page.Title %></h2>
             </hgroup>
-
+            <h2>Nanny List</h2>
             <asp:ListView ID="nannyList" runat="server" DataKeyNames="NannyID" GroupItemCount="2" ItemType="Nation1.Models.Nanny" SelectMethod="GetNannies">
                 <EmptyDataTemplate>
                     <table >

@@ -3,7 +3,8 @@
     <asp:FormView ID="nannyDetail" runat="server" ItemType="Nation1.Models.Nanny" SelectMethod="GetNanny" RenderOuterTable="false">
         <ItemTemplate>
             <div>
-                <h1><%#:Item.NannyName %></h1>
+                <h2>Nanny Details</h2>
+                <h4><%#:Item.NannyName %></h4>
             </div>
             <br />
             <table>
