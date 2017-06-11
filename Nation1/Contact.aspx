@@ -50,19 +50,34 @@
                 </div>
 
                 <div class="form-group">
-                    <asp:Label runat="server" AssociatedControlID="Message" CssClass="col-md-2 control-label">Message/Enquiry</asp:Label>
+                    <asp:Label runat="server" AssociatedControlID="Message" CssClass="col-md-2 control-label">Message</asp:Label>
                     <div class="col-md-10">
-                        <asp:TextBox runat="server" ID="Message" TextMode="MultiLine" Columns="40" Rows="15" />
+                        <asp:TextBox runat="server" ID="Message" CssClass="form-control" TextMode="MultiLine" Columns="20" Rows="8" />
+                        <asp:Label runat="server" ID="Label1" CssClass="control-label"></asp:Label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Message"
                             CssClass="text-danger" ErrorMessage="Please tpye a message or enquiry." />
                     </div>
                 </div>
 
+
                 <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <asp:Button runat="server" OnClick="CreateUser_Click" Text="Submit" CssClass="btn btn-default" />
+                    <div style="text-align:center">
+                        <asp:Label runat="server" ID="Sent" CssClass="control-label"></asp:Label>
                     </div>
                 </div>
+
+                
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <asp:Button runat="server" OnClick="Submit" Text="Submit" CssClass="btn btn-primary" />
+                         <asp:Button runat="server" OnClick="Reset" Text="Reset" CssClass="btn btn-primary" />
+                    </div>
+                </div>
+                
+
+                
+
             </div>
             <div class="col-md-4">
                 <address>
