@@ -23,6 +23,9 @@ namespace Nation1
             // Initialize the product database. 
             Database.SetInitializer(new ProductDatabaseInitializer());
 
+            // Initialize the nanny database. 
+            Database.SetInitializer(new NannyDatabaseInitializer());
+
             //Create the administrator role and user
             RoleActions roleActions = new RoleActions();
             roleActions.createAdmin();

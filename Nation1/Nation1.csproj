@@ -171,6 +171,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
+    <Content Include="AddToWish.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Catalog\Images\bbook1.jpg" />
     <Content Include="Catalog\Images\bbook2.jpg" />
@@ -306,6 +307,9 @@
     <Content Include="Checkout\Web.config" />
     <Content Include="Admin\Web.config" />
     <Content Include="ErrorPage.aspx" />
+    <Content Include="NannyDetails.aspx" />
+    <Content Include="NannyList.aspx" />
+    <Content Include="WishlistCart.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
@@ -472,6 +476,13 @@
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddToWish.aspx.cs">
+      <DependentUpon>AddToWish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToWish.aspx.designer.cs">
+      <DependentUpon>AddToWish.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -547,15 +558,33 @@
     <Compile Include="Logic\PayPalFunctions.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
+    <Compile Include="Logic\WishlistCartActions.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Nanny.cs" />
+    <Compile Include="Models\NannyContext.cs" />
+    <Compile Include="Models\NannyDatabaseInitializer.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
-    <Compile Include="Models\RepeatOrder.cs" />
+    <Compile Include="Models\WishItem.cs" />
+    <Compile Include="NannyDetails.aspx.cs">
+      <DependentUpon>NannyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NannyDetails.aspx.designer.cs">
+      <DependentUpon>NannyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NannyList.aspx.cs">
+      <DependentUpon>NannyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NannyList.aspx.designer.cs">
+      <DependentUpon>NannyList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -606,6 +635,13 @@
     </Compile>
     <Compile Include="ErrorPage.aspx.designer.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WishlistCart.aspx.cs">
+      <DependentUpon>WishlistCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishlistCart.aspx.designer.cs">
+      <DependentUpon>WishlistCart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
